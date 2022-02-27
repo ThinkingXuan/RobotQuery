@@ -28,16 +28,21 @@
      ![登录模板配置](/other/GIF图片/登录模板配置.gif)
 
   4. 一般聊天
-  
-	 ![一般聊天](/other/GIF图片/一般聊天.gif)
+     ![一般聊天](/other/GIF图片/一般聊天.gif)
 	
   5. 查询
-
-  ![查询1](/other/GIF图片/查询1.gif)  ![查询2](/other/GIF图片/查询2.gif)  ![查询3](/other/GIF图片/查询3.gif)
+  
+      ![查询1](/other/GIF图片/查询1.gif)  ![查询2](/other/GIF图片/查询2.gif)  ![查询3](/other/GIF图片/查询3.gif)
   
   6. 订阅
+  
+  	![订阅](/other/GIF图片/订阅.gif)
 
   7. 推荐
+  
+  	![推荐](/other/GIF图片/推荐.gif)
 
   8. 历史消息
+  
+  	![历史消息](/other/GIF图片/历史消息.gif)
 
