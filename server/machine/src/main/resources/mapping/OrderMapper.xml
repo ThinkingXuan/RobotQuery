@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.sale.OrderMapper">
+    <select id="selectOrder" resultType="com.njcit.model.sale.Order">
+
+    SELECT *
+    FROM orders
+    WHERE 1 = 1
+        <if test=" order_id !=null">
+            and ${order_id}
+        </if>
+        <if test=" customer_id !=null">
+            and ${customer_id}
+        </if>
+        <if test=" employee_id !=null">
+            and ${employee_id}
+        </if>
+        <if test=" order_date !=null">
+            and ${order_date}
+        </if>
+        <if test=" get_order_date!=null">
+            and ${get_order_date}
+        </if>
+        <if test=" shipper_id!=null">
+            and ${shipper_id}
+        </if>
+        <if test=" shipper_price!=null">
+            and ${shipper_price}
+        </if>
+        <if test=" owner_name !=null">
+            and ${owner_name}
+        </if>
+        <if test=" owner_address !=null">
+            and ${owner_address}
+        </if>
+        <if test=" owner_city !=null">
+            and ${owner_city}
+        </if>
+        <if test="owner_state !=null">
+            and ${owner_state}
+        </if>
+        <if test="owner_country !=null">
+            and ${owner_country}
+        </if>
+        <if test="owner_zip_code !=null">
+            and ${owner_zip_code}
+        </if>
+    </select>
+</mapper>

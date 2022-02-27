@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.sale.SalesVolumeMapper">
+    <select id="getAllSalesVolume" resultType="com.njcit.model.sale.SalesVolume">
+      SELECT *
+      FROM sales_volume
+      WHERE sales_volume_time BETWEEN #{0} AND #{1}
+
+
+    </select>
+</mapper>

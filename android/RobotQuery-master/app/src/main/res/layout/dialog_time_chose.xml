@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/radio_group_time"
+        android:gravity="center_horizontal"
+        android:paddingBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+            android:id="@+id/radio_no_mouth"
+            android:paddingLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_no"/>
+        <RadioButton
+
+            android:id="@+id/radio_two_mouth"
+            android:paddingLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_three_mouth"/>
+
+        <RadioButton
+            android:id="@+id/radio_one_mouth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/radio_one_mouth"/>
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_six_mouth"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_one_year"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_two_year"/>
+    </RadioGroup>
+
+</LinearLayout>

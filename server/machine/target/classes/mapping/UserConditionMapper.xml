@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.user.UserConditionMapper" >
+
+  <select id="selectByPrimaryKey" resultType="com.njcit.model.user.UserCondition">
+    SELECT *
+    FROM user_condition
+    WHERE user_id = #{userId}
+  </select>
+
+</mapper>

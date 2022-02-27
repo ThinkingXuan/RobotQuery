@@ -1,0 +1,204 @@
+{
+    "android_gradle_plugin_version": "2.3.0",
+    "apk_path": "D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\outputs\\apk\\app-debug.apk",
+    "apt": {
+        "app": {
+            "aptArgs": [
+                "-Aandroid.databinding.artifactType=APPLICATION",
+                "-Aandroid.databinding.printEncodedErrors=0",
+                "-Aandroid.databinding.minApi=18",
+                "-Aandroid.databinding.isTestVariant=0",
+                "-Aandroid.databinding.enableDebugLogs=0",
+                "-Aandroid.databinding.sdkDir=D:\\Androidstudio\\sdk",
+                "-Aandroid.databinding.bindingBuildFolder=D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\intermediates\\data-binding-compiler\\debug",
+                "-Aandroid.databinding.enableForTests=0",
+                "-Aandroid.databinding.modulePackage=com.njcit.robotquery",
+                "-Aandroid.databinding.generationalFileOutDir=D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\intermediates\\bundles\\debug\\data-binding",
+                "-Aandroid.databinding.xmlOutDir=D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\intermediates\\data-binding-info\\debug"
+            ],
+            "aptOutput": "D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\generated\\source\\apt\\debug",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "C:\\Users\\Administrator\\.android\\build-cache\\bba5234a02f915d16e8134a7b596f7d945ea1ebb\\output\\jars\\classes.jar;D:\\Androidstudio\\sdk\\extras\\m2repository\\com\\android\\support\\constraint\\constraint-layout-solver\\1.0.2\\constraint-layout-solver-1.0.2.jar;C:\\Users\\Administrator\\.android\\build-cache\\49566bbd4c213ef191e98849f71ceec9a67acc56\\output\\jars\\classes.jar;D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\build\\intermediates\\bundles\\default\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\d83d0dc6b1d700c6ed001f0a795d3aa394f26e59\\output\\jars\\classes.jar;D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\build\\intermediates\\bundles\\default\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\4a7fd4ab4f914f853eb8d5f3d6c6756d7ea142b0\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\198feb5ce57748f0fb3d696a2feeabbc1738d6c0\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\f3fd94eb0de138f3e2de14a111ca8902681b821a\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\182f05513f5d18ea463537ee055878fc3dbfce66\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\266724faa19c3faa890df64caaa752d64c8b6839\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.github.bumptech.glide\\glide\\3.7.0\\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\\glide-3.7.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okhttp3\\logging-interceptor\\3.6.0\\81887458b69ddc32722df7e4c35235fd74e6a8ba\\logging-interceptor-3.6.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.retrofit2\\converter-gson\\2.0.1\\2780d858273ce1bb90f6b12e1ef0d40f7741fca\\converter-gson-2.0.1.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.retrofit2\\adapter-rxjava\\2.0.1\\cabf146d220dcd70a2972166cd1bfae200b97eff\\adapter-rxjava-2.0.1.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.retrofit2\\retrofit\\2.1.0\\2de7cd8b95b7021b1d597f049bcb422055119f2c\\retrofit-2.1.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okhttp3\\okhttp\\3.6.0\\69edde9fc4b01c9fd51d25b83428837478c27254\\okhttp-3.6.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.squareup.okio\\okio\\1.11.0\\840897fcd7223a8143f1d9b6f69714e7be34fd50\\okio-1.11.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.google.code.gson\\gson\\2.6.2\\f1bc476cc167b18e66c297df599b2377131a8947\\gson-2.6.2.jar;C:\\Users\\Administrator\\.android\\build-cache\\122d111aeaa52e39bfb463c4805d6ea76462d645\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\io.reactivex\\rxjava\\1.2.1\\4e4cfa4adc74521d5966799fa5ab70b733552f68\\rxjava-1.2.1.jar;C:\\Users\\Administrator\\.android\\build-cache\\b0c9f039e90592a278c281147849d021023f8cc0\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\fc757c76db7ca6b38319c816f4d6a8eeb7deec2e\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\83c4c75abf397e0cb04c136ff7051a2106620615\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\77c51f17c8dc115abe9c0d5f20d7334dc0d85811\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\1b7918a588c1f7ed6b300295e04e35a08e1e735b\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\542df9b830fedcafbd74735bc2625650b64adf3a\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\b6ac3d8cf0348f3902454980f175baaf97ebb743\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.github.PhilJay\\MPAndroidChart\\v3.0.2\\5d4eb08a326bdbd7fbbddc769666898c9936b282\\MPAndroidChart-v3.0.2.jar;C:\\Users\\Administrator\\.android\\build-cache\\5aad9b3f39fc823e37dac9f1ced439c6081e77ff\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\19770037d54217f2cd863b4af9fdb50302439780\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\4474367707d18569869bb12bbf69a8d05d2b49b1\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\2496aa84e8d2735ee1907521bab7fc6c92e814b0\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\2496aa84e8d2735ee1907521bab7fc6c92e814b0\\output\\jars\\libs\\internal_impl-25.0.0.jar;C:\\Users\\Administrator\\.android\\build-cache\\c9499a5afe9c8303d44a6b81cc22ff13e89f8d01\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\c9499a5afe9c8303d44a6b81cc22ff13e89f8d01\\output\\jars\\libs\\internal_impl-25.0.0.jar;C:\\Users\\Administrator\\.android\\build-cache\\69d1cdb153ec72b6bbed436c7b39805f60b82edb\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\69d1cdb153ec72b6bbed436c7b39805f60b82edb\\output\\jars\\libs\\internal_impl-25.0.0.jar;C:\\Users\\Administrator\\.android\\build-cache\\97cad2a44742eac77fec6aa5ec8fc9da6666d90d\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\97cad2a44742eac77fec6aa5ec8fc9da6666d90d\\output\\jars\\libs\\internal_impl-25.0.0.jar;C:\\Users\\Administrator\\.android\\build-cache\\baa546b50c58ed0f2496f02183c6e1a8b29f540d\\output\\jars\\classes.jar;C:\\Users\\Administrator\\.android\\build-cache\\baa546b50c58ed0f2496f02183c6e1a8b29f540d\\output\\jars\\libs\\internal_impl-25.0.0.jar;D:\\Androidstudio\\sdk\\extras\\android\\m2repository\\com\\android\\support\\support-annotations\\25.0.0\\support-annotations-25.0.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.android.databinding\\baseLibrary\\2.3.0\\d63c4d23204cadf1390fd1bbca8c1b05396aed\\baseLibrary-2.3.0.jar;C:\\Users\\Administrator\\.android\\build-cache\\9e78005341ab6e7ae5748fe7cb98a367a614f778\\output\\jars\\classes.jar;D:\\Androidstudio\\Match\\RobotQuery\\app\\libs\\jcore-android_v1.1.1.jar;D:\\Androidstudio\\Match\\RobotQuery\\app\\libs\\jpush-android_v3.0.3.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.android.databinding\\compiler\\2.3.0\\d1a4d52d24f8ac733b61a4d6a807a18c009d6826\\compiler-2.3.0.jar;C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.googlecode.juniversalchardet\\juniversalchardet\\1.0.3\\cd49678784c46aa8789c060538e0154013bb421b\\juniversalchardet-1.0.3.jar"
+        }
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\freeline",
+    "build_directory": "D:\\Androidstudio\\Match\\RobotQuery\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "D:\\Androidstudio\\sdk\\build-tools\\25.0.0",
+    "build_tools_version": "25.0.0",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "D:\\Androidstudio\\sdk\\platforms\\android-24",
+    "compile_sdk_version": "android-24",
+    "databinding": [
+        {
+            "isLibrary": false,
+            "minSdkVersion": 18,
+            "name": "app",
+            "packageName": "com.njcit.robotquery"
+        }
+    ],
+    "databinding_compiler_jar": "C:\\Users\\Administrator\\.gradle\\caches\\modules-2\\files-2.1\\com.android.databinding\\compiler\\2.3.0\\d1a4d52d24f8ac733b61a4d6a807a18c009d6826\\compiler-2.3.0.jar",
+    "databinding_modules": [
+        "app"
+    ],
+    "debug_package": "com.njcit.robotquery",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "D:\\Androidstudio\\Match\\RobotQuery",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "D:\\Java\\jdk1.8.0_66",
+    "launcher": "com.njcit.robotquery.MainActivity",
+    "main_assets_directory": [
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\assets",
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\jniLibs",
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\libs"
+    ],
+    "main_jni_directory": [
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\jni",
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "D:\\Androidstudio\\Match\\RobotQuery\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\res",
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\res"
+    ],
+    "main_src_directory": [
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\java",
+        "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "android-chat-widget": [
+            
+        ],
+        "app": [
+            "android-chat-widget",
+            "chatkit"
+        ],
+        "chatkit": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "D:\\Androidstudio\\Match\\RobotQuery\\app"
+        },
+        {
+            "name": "android-chat-widget",
+            "path": "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget"
+        },
+        {
+            "name": "chatkit",
+            "path": "D:\\Androidstudio\\Match\\RobotQuery\\chatkit"
+        }
+    ],
+    "package": "com.njcit.robotquery",
+    "product_flavor": "",
+    "project_source_sets": {
+        "android-chat-widget": {
+            "main_assets_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\release\\assets",
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\release\\jniLibs",
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\release\\jni",
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\release\\res",
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\release\\java",
+                "D:\\Androidstudio\\Match\\RobotQuery\\android-chat-widget\\src\\main\\java"
+            ]
+        },
+        "app": {
+            "main_assets_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\assets",
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\jniLibs",
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\libs"
+            ],
+            "main_jni_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\jni",
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\res",
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\debug\\java",
+                "D:\\Androidstudio\\Match\\RobotQuery\\app\\src\\main\\java"
+            ]
+        },
+        "chatkit": {
+            "main_assets_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\release\\assets",
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\release\\jniLibs",
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\release\\jni",
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\jni"
+            ],
+            "main_manifest_path": "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\release\\res",
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\res"
+            ],
+            "main_src_directory": [
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\release\\java",
+                "D:\\Androidstudio\\Match\\RobotQuery\\chatkit\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "D:\\Androidstudio\\Match\\RobotQuery",
+    "sdk_directory": "D:\\Androidstudio\\sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}

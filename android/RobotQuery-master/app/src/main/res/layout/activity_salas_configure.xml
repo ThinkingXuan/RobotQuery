@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/titlebar_base"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_salas_productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:stateListAnimator="@animator/touch_raise"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_image_00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_queue_blue_500_24dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_username_00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/iv_ic_image_00"
+                            android:gravity="center_vertical"
+                            android:text="产  品  名"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_salas_productName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_toStartOf="@+id/imageView00"
+                            android:gravity="center_vertical"
+                            android:text="不限"/>
+
+                        <ImageView
+                            android:id="@+id/imageView00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/ic_keyboard_arrow_right_grey_400_24dp"/>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/linear_salas_productType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:stateListAnimator="@animator/touch_raise"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_image_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_queue_blue_500_24dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_time_00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/iv_ic_image_0"
+                            android:gravity="center_vertical"
+                            android:text="@string/item_product_productType"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_salas_productType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_toStartOf="@+id/imageView0"
+                            android:gravity="center_vertical"
+                            android:text="@string/item_no"/>
+
+                        <ImageView
+                            android:id="@+id/imageView0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/ic_keyboard_arrow_right_grey_400_24dp"/>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_salas_quarter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="false"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:stateListAnimator="@animator/touch_raise"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_ic_imag_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_queue_blue_500_24dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:text="季        度"
+                            android:textColor="@color/primary_text"
+                            android:textSize="16dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/iv_ic_imag_3"
+                            android:layout_marginStart="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_salas_quarter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_toStartOf="@+id/imageView3"
+                            android:gravity="center_vertical"
+                            android:text="@string/item_no"/>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/ic_keyboard_arrow_right_grey_400_24dp"/>
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/bt_chose"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_button_with_corner"
+                    android:text="确定"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+</layout>
+

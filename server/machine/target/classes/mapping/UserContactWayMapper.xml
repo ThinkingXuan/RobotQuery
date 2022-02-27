@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.user.UserContactWayMapper" >
+  <resultMap id="BaseResultMap" type="com.njcit.model.user.UserContactWay" >
+    <constructor >
+      <idArg column="user_id" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_phone" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_qq" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_wechat" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_email" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="user_telephone" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, user_phone, user_qq, user_wechat, user_email, user_telephone
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from user_contact_way
+    where user_id = #{userId,jdbcType=VARCHAR}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from user_contact_way
+    where user_id = #{userId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.njcit.model.user.UserContactWay" >
+    insert into user_contact_way (user_id, user_phone, user_qq, 
+      user_wechat, user_email, user_telephone
+      )
+    values (#{userId,jdbcType=VARCHAR}, #{userPhone,jdbcType=VARCHAR}, #{userQq,jdbcType=VARCHAR}, 
+      #{userWechat,jdbcType=VARCHAR}, #{userEmail,jdbcType=VARCHAR}, #{userTelephone,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.njcit.model.user.UserContactWay" >
+    insert into user_contact_way
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="userPhone != null" >
+        user_phone,
+      </if>
+      <if test="userQq != null" >
+        user_qq,
+      </if>
+      <if test="userWechat != null" >
+        user_wechat,
+      </if>
+      <if test="userEmail != null" >
+        user_email,
+      </if>
+      <if test="userTelephone != null" >
+        user_telephone,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=VARCHAR},
+      </if>
+      <if test="userPhone != null" >
+        #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userQq != null" >
+        #{userQq,jdbcType=VARCHAR},
+      </if>
+      <if test="userWechat != null" >
+        #{userWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null" >
+        #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userTelephone != null" >
+        #{userTelephone,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.njcit.model.user.UserContactWay" >
+    update user_contact_way
+    <set >
+      <if test="userPhone != null" >
+        user_phone = #{userPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="userQq != null" >
+        user_qq = #{userQq,jdbcType=VARCHAR},
+      </if>
+      <if test="userWechat != null" >
+        user_wechat = #{userWechat,jdbcType=VARCHAR},
+      </if>
+      <if test="userEmail != null" >
+        user_email = #{userEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="userTelephone != null" >
+        user_telephone = #{userTelephone,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.njcit.model.user.UserContactWay" >
+    update user_contact_way
+    set user_phone = #{userPhone,jdbcType=VARCHAR},
+      user_qq = #{userQq,jdbcType=VARCHAR},
+      user_wechat = #{userWechat,jdbcType=VARCHAR},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      user_telephone = #{userTelephone,jdbcType=VARCHAR}
+    where user_id = #{userId,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/titlebar_base"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="7dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="23dp"
+                android:background="@drawable/ic_cylinder"/>
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="点击配置"
+                android:textColor="@color/secondary_text"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/ll_choose_catalogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="共"
+                    android:textColor="@color/colorTabText"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_data_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="10"
+                    android:textColor="@color/colorTabText"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="条"
+                    android:textColor="@color/colorTabText"
+                    android:textSize="13sp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.njcit.robotquery.view.flexbox.widget.TagFlowLayout
+            android:id="@+id/flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:defaultDrawable="@drawable/bg_flow_unselect"
+            app:defaultTextColor="@color/primary_text"
+            app:dividerDrawable="@drawable/bg_flow_divider"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start"
+            app:mode="MULTI"
+            app:selectDrawable="@drawable/bg_flow_selected"
+            app:selectTextColor="@android:color/white"
+            app:showDivider="beginning|middle|end"/>
+
+        <Button
+            android:id="@+id/bt_done"
+            android:background="@drawable/selector_button_with_corner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:text="确定"/>
+    </LinearLayout>
+</layout>

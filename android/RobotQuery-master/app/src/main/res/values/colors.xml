@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="transparent">#72FFFFFF</color>
+    <color name="chat_message_background">#eae8e8</color>
+
+    <!--<color name="primary">#FFC107</color>-->
+    <!--<color name="primary_dark">#FFA000</color>-->
+    <!--<color name="primary_light">#FFECB3</color>-->
+    <!--<color name="accent">#03A9F4</color>-->
+    <!--<color name="primary_text">#212121</color>-->
+    <!--<color name="secondary_text">#757575</color>-->
+    <!--<color name="icons">#FFFFFF</color>-->
+    <!--<color name="divider">#BDBDBD</color>-->
+    <color name="colorWhite">#ffffffff</color>
+
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+
+
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+
+    <color name="gray">#ebebeb</color>
+    <color name="gray_light">#e8e8e8</color>
+    <color name="gray_transparent">#a6efefef</color>
+    <color name="gray_dark_transparent">#ae858585</color>
+    <color name="black">#000000</color>
+    <color name="ivory">#f8efe6</color>
+    <color name="ivory_dark">#f7e8d9</color>
+    <color name="green">#38be55</color>
+    <color name="green_dark">#2da346</color>
+    <color name="red">#e94f4f</color>
+
+    <color name="normal_cell_bg">#FEFFFE</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_line">#E7E7E7</color>
+    <color name="text_dark1">#333333</color>
+    <color name="text_dark2">#666666</color>
+    <color name="text_dark3">#999999</color>
+    <color name="booking">#f9266f</color>
+    <color name="staying">#64d8ef</color>
+    <color name="left">#a981ff</color>
+    <color name="bg_color">#FF99DCD7</color>
+    <color name="tab_indicator_color">#66aea9</color>
+    <color name="tab_text_color">#74c6c0</color>
+
+    <color name="white60">#a0ffffff</color>
+    <color name="white_two">#efefef</color>
+    <color name="white_three">#ebebeb</color>
+    <color name="blue">#031cd7</color>
+    <color name="dark_gray">#282a2b</color>
+    <color name="dark_grey_two">#191a1b</color>
+    <color name="warm_grey">#7f7f7f</color>
+    <color name="warm_grey_two">#9c9c9c</color>
+    <color name="warm_grey_three">#8b8b8b</color>
+    <color name="warm_grey_four">#979797</color>
+    <color name="dark_mint">#51c05c</color>
+    <color name="cornflower_blue_two">#4f62d7</color>
+    <color name="cornflower_blue_two_24">#3d4f62d7</color>
+
+    <color name="dialog_divider">@color/white_three</color>
+    <color name="dialog_title_text">@color/dark_gray</color>
+    <color name="dialog_message_text">@color/warm_grey</color>
+    <color name="dialog_date_text">@color/warm_grey_two</color>
+    <color name="dialog_unread_text">@color/white</color>
+    <color name="dialog_unread_bubble">@color/dark_mint</color>
+
+</resources>
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="commons-pool-1.5.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../Alice/Alice/lib/commons-pool-1.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

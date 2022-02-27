@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.MessageDao">
+    <!--为dao接口方法提供sql语句-->
+
+    <insert id="saveMessage" parameterType="Message">
+
+        <selectKey keyProperty="messageId" order="BEFORE" resultType="String">
+            select replace(uuid(),'-','') from dual
+        </selectKey>
+        INSERT ignore INTO message(user_id,message_id,time,content,isrobot,type)
+        VALUES (#{userId},#{messageId},#{time},#{content},#{isRobot},#{type})
+
+
+    </insert>
+
+    <!--查看历史消息-->
+    <select id="getHistoryMessage" resultType="com.njcit.model.Message">
+        SELECT *
+        FROM message
+        WHERE user_id=#{0}
+        order by time desc LIMIT #{1},#{2}
+    </select>
+
+    <select id="getHistoryMessageSize" resultType="int">
+        SELECT COUNT(*)FROM message WHERE user_id=#{userId}
+    </select>
+
+
+</mapper>

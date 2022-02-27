@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="查询模板">
+        <menu>
+
+            <item
+                android:id="@+id/menu_employee_query"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="员工查询"/>
+            <item
+                android:id="@+id/menu_tendence"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="考勤查询"/>
+            <item
+                android:id="@+id/menu_post"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="招聘查询"/>
+            <item
+                android:id="@+id/menu_trains"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="员工培训"/>
+            <item
+                android:id="@+id/menu_check"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="绩效考核"/>
+
+            <item
+                android:id="@+id/menu_order"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="订单查询"/>
+
+            <item
+                android:id="@+id/menu_sales_account"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="销量查询"/>
+            <item
+                android:id="@+id/menu_product"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="产品查询"/>
+            <!--<item-->
+                <!--android:id="@+id/menu_logistics"-->
+                <!--android:icon="@drawable/ic_menu_manage"-->
+                <!--android:title="物流"/>-->
+            <!--<item-->
+                <!--android:id="@+id/menu_position"-->
+                <!--android:icon="@drawable/ic_menu_manage"-->
+                <!--android:title="职位查询"/>-->
+            <!--<item-->
+                <!--android:id="@+id/menu_work"-->
+                <!--android:icon="@drawable/ic_menu_manage"-->
+                <!--android:title="员工任务"/>-->
+
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/menu_template_configure"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="模板配置">
+    </item>
+
+    <item
+        android:id="@+id/menu_robot_train"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="训练模式">
+    </item>
+
+    <item
+        android:id="@+id/menu_open"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search_menu"
+        app:showAsAction="ifRoom"/>
+
+</menu>

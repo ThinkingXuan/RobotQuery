@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".moudle.register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_login_bg">
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:paddingTop="35dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_add"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/register"
+                        android:textColor="#FFCC00"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="50dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#c5c5c5">
+
+                            <EditText
+                                android:id="@+id/et_email_register"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selector_bg_edit"
+                                android:hint="@string/email_login"
+                                android:inputType="textEmailAddress"
+                                android:paddingBottom="2dp"
+                                android:textColor="#2fa881"
+                                android:textCursorDrawable="@drawable/bg_input_cursor"
+                                android:textSize="16sp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="50dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#c5c5c5">
+
+                            <EditText
+                                android:id="@+id/et_username_register"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selector_bg_edit"
+                                android:hint="@string/username"
+                                android:inputType="textEmailAddress"
+                                android:paddingBottom="2dp"
+                                android:textColor="#2fa881"
+                                android:textCursorDrawable="@drawable/bg_input_cursor"
+                                android:textSize="16sp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="50dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#c5c5c5">
+
+                            <EditText
+                                android:id="@+id/et_password_register"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selector_bg_edit"
+                                android:hint="@string/Password"
+                                android:inputType="textPassword"
+                                android:paddingBottom="2dp"
+                                android:textColor="#2fa881"
+                                android:textCursorDrawable="@drawable/bg_input_cursor"
+                                android:textSize="16sp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="50dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#c5c5c5">
+
+                            <EditText
+                                android:id="@+id/et_repeatpassword_register"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selector_bg_edit"
+                                android:hint="@string/repeat_password"
+                                android:inputType="textPassword"
+                                android:paddingBottom="2dp"
+                                android:textColor="#2fa881"
+                                android:textCursorDrawable="@drawable/bg_input_cursor"
+                                android:textSize="16sp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="30dp"
+                        android:paddingStart="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请选择职位"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:background="@color/primary"
+                            android:entries="@array/position_company"
+                            android:textColor="@color/primary">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_go_register"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bt_shape"
+                        android:stateListAnimator="@drawable/state_list_animator_z"
+                        android:text="@string/next"
+                        android:textColor="#2fa881"
+                        >
+                    </Button>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/plus_x"
+                android:transitionName="loginFab"
+                app:fabSize="normal"/>
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</layout>

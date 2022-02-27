@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/userAvatarImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/robot_head"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+
+
+        <ScrollView
+            android:layout_toRightOf="@+id/userAvatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@drawable/chatfrom_bg"
+            android:layout_toRightOf="@+id/userAvatarImageView"
+            android:id="@+id/recycler_module_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

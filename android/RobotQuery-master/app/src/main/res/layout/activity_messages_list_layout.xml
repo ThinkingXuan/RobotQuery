@@ -1,0 +1,49 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.njcit.robotquery.view.chatUI.messages.MessagesList
+            android:id="@+id/messagesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/input"
+            android:layout_below="@+id/title_"
+            android:background="@color/chat_message_background"
+            app:incomingAvatarHeight="40dp"
+            app:incomingAvatarWidth="40dp"
+            app:incomingBubbleDrawable="@drawable/bg_custom_incoming_message"
+            app:incomingDefaultBubblePressedColor="@color/ivory_dark"
+            app:incomingDefaultBubbleSelectedColor="@color/gray"
+            app:outcomingBubbleDrawable="@drawable/bg_custom_outcoming_message"
+            app:outcomingDefaultBubblePressedColor="@color/green_dark"
+            app:outcomingDefaultBubbleSelectedColor="@color/gray_dark_transparent"
+            app:outcomingTimeTextColor="@color/gray_dark_transparent"/>
+
+        <View
+            android:id="@+id/diverd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/input"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/gray_light"/>
+
+
+        <com.njcit.robotquery.view.chatUI.messages.MessageInput
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:inputButtonBackground="@drawable/select_send_button"
+            app:inputButtonIcon="@drawable/ic_send_selector"
+            app:inputHint="@string/hint_enter_a_message"/>
+
+
+    </RelativeLayout>
+
+</layout>

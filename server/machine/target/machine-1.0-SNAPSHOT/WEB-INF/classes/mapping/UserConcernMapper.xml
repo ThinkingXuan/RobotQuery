@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.user.UserConcernMapper">
+
+    <insert id="insertNewConcern">
+        INSERT INTO user_concern(user_id,template_id)
+        VALUES (#{0},#{1})
+    </insert>
+
+
+    <delete id="CancelConcern">
+        DELETE FROM user_concern
+        WHERE user_id = #{0} AND template_id =#{1}
+    </delete>
+    <select id="getConcern" resultType="java.lang.String">
+        SELECT  template_id
+        FROM user_concern
+        WHERE user_id = #{0}
+    </select>
+
+</mapper>

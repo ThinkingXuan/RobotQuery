@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">RobotQuery</string>
+
+    <string name="action_settings">设置</string>
+    <string name="search_menu">搜索</string>
+    <string name="item_chat">聊天</string>
+    <string name="item_function">功能</string>
+    <string name="item_people">个人</string>
+
+    <string name="loginText">登录</string>
+    <string name="email_login">邮箱</string>
+
+    <string name="Password">密码</string>
+    <string name="username">用户名</string>
+    <string name="forgot_your_password">忘记密码 ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">确认密码</string>
+    <string name="next">next</string>
+    <string name="register">注册</string>
+
+    <string name="chat_name_robot_1">机器人小蜜</string>
+    <string name="chat_name_robot">小蜜</string>
+    <string name="model_choose">模板选择</string>
+    <string name="my_model_str">模板列表</string>
+    <string name="drag_sort_str">拖拽可以排序</string>
+    <string name="choose_finish_str">完成</string>
+    <string name="model_recommend">模板推荐</string>
+
+    <string name="my_query_history">查询历史</string>
+    <string name="my_order_history">我的订阅</string>
+    <string name="my_person_info">个人信息</string>
+    <string name="activity_model_configure">模板配置</string>
+    <string name="activity_model_list">模板列表</string>
+    <string name="activity_template_center_detail">模板中心</string>
+
+    <string name="item_worker_username">用  户  名</string>
+    <string name="item_model_position">职位</string>
+    <string name="item_worker_acount">员工数量</string>
+    <string name="item_worker_base_info">员工职位</string>
+    <string name="item_choose_condition">员工薪资</string>
+    <string name="item_time">考勤时间</string>
+    <string name="item_no_support">此功能不能配置</string>
+
+
+    <string name="item_product_productName">产  品  名</string>
+    <string name="item_product_productType">产品类型</string>
+    <string name="item_product_perAcount">每箱的数量</string>
+    <string name="item_product_productPrice">价格</string>
+    <string name="item_product_storageCount">库存数量</string>
+    <string name="item_product_supplier">供应商</string>
+
+    <string name="item_order_number">订单编号</string>
+    <string name="item_order_user">订货人</string>
+
+    <string name="item_no">不限</string>
+    <string name="radio_one_mouth">总裁</string>
+    <string name="radio_three_mouth">经理</string>
+    <string name="radio_six_mouth">普通员工</string>
+    <string name="radio_one_year">工程师</string>
+    <string name="radio_two_year">设计师</string>
+
+
+    <string name="recommed_look">订阅</string>
+    <string name="recommed_nolook">取消关注</string>
+
+    <string name="navigation_navigation_bar">navigationbar</string>
+
+    <string name="sample_title_default">Default design</string>
+    <string name="sample_title_attrs">Styling using attributes</string>
+    <string name="sample_title_layout">Custom layout</string>
+    <string name="sample_title_holder">Custom view holder</string>
+
+    <string name="hint_enter_a_message">请输入</string>
+    <string name="on_log_click_message">Your custom long click handler</string>
+    <string name="action_delete">Delete</string>
+
+    <string-array name="recycer_item_menu">
+        <item>复制</item>
+        <item>删除</item>
+        <item>分享</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="position_company">
+        <item>老板</item>
+        <item>经理</item>
+        <item>员工</item>
+    </string-array>
+
+    <string-array name="boss_template">
+        <item>员工查询</item>
+        <item>考勤</item>
+        <item>招聘</item>
+        <item>员工培训</item>
+        <item>绩效考核</item>
+        <item>薪资查询</item>
+    </string-array>
+
+    <!-- 听写 -->
+    <string name="app_id">590fdd4b</string>
+    <string name="text_begin">请开始说话…</string>
+    <string name="text_begin_recognizer">开始音频流识别</string>
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_userwords">上传用户词表</string>
+    <string name="text_upload_success">上传成功</string>
+    <string name="text_userword_empty">词表下载失败或内容为空</string>
+    <string name="text_download_success">下载成功</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_title_iat_dwa">结果动态修正</string>
+
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>en_us</item>
+    </string-array>
+    <!-- 标点符号 -->
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nevigation_item" translatable="false">nevigation_item</string>
+</resources>

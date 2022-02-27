@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.hr.UserPerformanceSQLMapper">
+    <select id="getUserPerformance" resultType="com.njcit.model.hr.UserPerformance">
+        SELECT *
+
+        FROM user_performance
+
+        WHERE 1 = 1
+
+        <if test=" userId!=null">
+            and ${userId}
+        </if>
+
+        <if test=" userAttitude!=null">
+            and ${userAttitude}
+        </if>
+
+        <if test=" userResponsibility!=null">
+            and ${userResponsibility}
+        </if>
+
+        <if test=" userWorkAbility!=null">
+            and ${userWorkAbility}
+        </if>
+
+        <if test=" userTrainingAbility!=null">
+            and ${userTrainingAbility}
+        </if>
+
+        <if test=" userTotal!=null">
+            and ${userTotal}
+        </if>
+
+    </select>
+</mapper>

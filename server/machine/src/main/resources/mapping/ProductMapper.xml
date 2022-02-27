@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.sale.ProductMapper">
+    <select id="selectProduct" resultType="com.njcit.model.sale.Product">
+
+        SELECT *
+        FROM product
+        WHERE 1 = 1
+
+        <if test="product_id !=null">
+            and ${product_id}
+        </if>
+
+        <if test="product_name">
+            and ${product_name}
+        </if>
+
+        <if test="supplier_id">
+            and ${supplier_id}
+        </if>
+
+        <if test="type_id">
+            and ${type_id}
+        </if>
+
+        <if test="per_count">
+            and ${per_count}
+        </if>
+
+        <if test="price">
+            and ${price}
+        </if>
+        <if test="storage_count">
+            and ${storage_count}
+        </if>
+
+    </select>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.hr.UserTrainingSQLMapper">
+    <select id="getUserTraining" resultType="com.njcit.model.hr.UserTraining">
+        SELECT *
+        FROM user_training
+        WHERE 1 = 1
+        <if test=" trainId!=null">
+            and ${trainId}
+        </if>
+        <if test=" trainName!=null">
+            and ${trainName}
+        </if>
+        <if test=" trainTarget!=null">
+            and ${trainTarget}
+        </if>
+        <if test=" trainTrainer!=null">
+            and ${trainTrainer}
+        </if>
+        <if test=" trainDate!=null">
+            and ${trainDate}
+        </if>
+    </select>
+</mapper>

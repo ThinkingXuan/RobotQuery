@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_button" android:state_activated="false" />
+    <item android:drawable="@drawable/shape_button" android:state_active="false"/>
+    <item android:drawable="@drawable/shape_button" android:state_focused="false"/>
+    <item android:drawable="@drawable/shape_button" android:state_selected="false"/>
+
+    <item android:drawable="@drawable/shape_button_select" android:state_activated="true"/>
+    <item android:drawable="@drawable/shape_button_select" android:state_active="true"/>
+    <item android:drawable="@drawable/shape_button_select" android:state_focused="true"/>
+    <item android:drawable="@drawable/shape_button_select" android:state_selected="true"/>
+</selector>

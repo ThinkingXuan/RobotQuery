@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.user.UserConditionSQLMapper">
+    <select id="getUserConditioin" resultType="com.njcit.model.user.UserCondition" parameterType="UserConditionSQL">
+        SELECT *
+        FROM user_condition
+        WHERE 1 = 1
+        <if test="userId !=null">
+            and ${userId}
+        </if>
+        <if test="userUsername !=null">
+            and ${userUsername}
+        </if>
+        <if test="userPosition !=null">
+            and ${userPosition}
+        </if>
+        <if test="userBirthday !=null">
+            and ${userBirthday}
+        </if>
+        <if test="userSalary !=null">
+            and ${userSalary}
+        </if>
+        <if test="userWorkDate !=null">
+            and ${userWorkDate}
+        </if>
+        <if test="userSchool !=null">
+            and ${userSchool}
+        </if>
+
+        <if test="userDepartment !=null">
+            and ${userDepartment}
+        </if>
+
+        <if test="userGender !=null">
+            and ${userGender}
+        </if>
+        <if test="userHometown !=null">
+            and ${userSchool}
+        </if>
+
+        <if test="userEducation !=null">
+          and ${userEducation}
+        </if>
+        <if test="userAge !=null">
+            and ${userAge}
+        </if>
+    </select>
+</mapper>

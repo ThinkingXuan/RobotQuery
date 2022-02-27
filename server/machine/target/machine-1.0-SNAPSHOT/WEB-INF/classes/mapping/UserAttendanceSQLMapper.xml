@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.hr.UserAttendanceSQLMapper">
+    <select id="getUserAttendance" resultType="com.njcit.model.hr.UserAttendance">
+            SELECT *
+            FROM user_attendance
+            WHERE 1 = 1
+            <if test=" attendanceDate!=null">
+              and ${attendanceDate}
+            </if>
+
+            <if test=" attendanceAll!=null">
+                    and ${attendanceAll}
+            </if>
+
+            <if test=" attendanceReal!=null">
+                and ${attendanceReal}
+            </if>
+    </select>
+</mapper>

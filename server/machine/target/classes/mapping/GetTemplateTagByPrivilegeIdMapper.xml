@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.privilegeInformation.GetTemplateTagByPrivilegeIdMapper">
+
+    <select id="getTemplateTagIdByPrivilegeId" resultType="java.lang.String">
+        SELECT template_id
+
+        FROM privilege_template
+
+        WHERE privilege_id=#{privilegeId}
+
+    </select>
+    <select id="getTemplateTagNameByTemplateTagId" resultType="java.lang.String">
+        SELECT template_name
+        FROM template
+        WHERE template_id = #{templateId}
+    </select>
+</mapper>

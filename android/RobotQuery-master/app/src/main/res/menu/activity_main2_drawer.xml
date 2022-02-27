@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_chat_robot"
+            android:icon="@drawable/ic_chat_purple_200_24dp"
+            android:title="聊天"/>
+        <item
+            android:id="@+id/nav_function"
+            android:icon="@drawable/ic_functions_deep_orange_500_24dp"
+            android:title="功能"/>
+        <item
+            android:id="@+id/nav_template"
+            android:icon="@drawable/ic_format_list_bulleted_blue_500_24dp"
+            android:title="模板列表"/>
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_bookmark_border_teal_500_24dp"
+            android:title="我的订阅"/>
+        <item
+            android:id="@+id/nav_look_history"
+            android:icon="@drawable/ic_history_blue_600_24dp"
+            android:title="浏览历史"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="更新"/>
+        </menu>
+    </item>
+
+</menu>

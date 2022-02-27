@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.DailyRecommendMapper" >
+
+  <insert id="insert" parameterType="com.njcit.model.article.DailyRecommend" >
+
+    <selectKey keyProperty="dailyRecommendId" order="BEFORE" resultType="String">
+      select replace(uuid(),'-','') from dual
+    </selectKey>
+
+    insert into daily_recommend (daily_recommend_id, daily_recommend_time,
+      daily_recommend_content, daily_recommend_picture,daily_recommend_title
+      ,daily_recommend_model_id,daily_recommend_line_chart,daily_recommend_circle_chart)
+    values (#{dailyRecommendId,jdbcType=VARCHAR}, #{dailyRecommendTime,jdbcType=VARCHAR},
+      #{dailyRecommendContent,jdbcType=VARCHAR}, #{dailyRecommendPicture,jdbcType=VARCHAR}
+    ,#{dailyRecommendTitle,jdbcType=VARCHAR},#{dailyRecommendModelId,jdbcType=VARCHAR},#{dailyRecommendLineChart},#{dailyRecommendCircleChart})
+  </insert>
+
+  <insert id="insertSelective" parameterType="com.njcit.model.article.DailyRecommend" >
+
+    <selectKey keyProperty="dailyRecommendId" order="BEFORE" resultType="String">
+      select replace(uuid(),'-','') from dual
+    </selectKey>
+
+    insert into daily_recommend
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="dailyRecommendId != null" >
+        daily_recommend_id,
+      </if>
+      <if test="dailyRecommendTime != null" >
+        daily_recommend_time,
+      </if>
+      <if test="dailyRecommendContent != null" >
+        daily_recommend_content,
+      </if>
+      <if test="dailyRecommendPicture != null" >
+        daily_recommend_picture,
+      </if>
+      <if test="dailyRecommendTitle != null" >
+        daily_recommend_title,
+      </if>
+      <if test="dailyRecommendModelId != null" >
+        daily_recommend_model_id,
+      </if>
+
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="dailyRecommendId != null" >
+        #{dailyRecommendId,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyRecommendTime != null" >
+        #{dailyRecommendTime,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyRecommendContent != null" >
+        #{dailyRecommendContent,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyRecommendPicture != null" >
+        #{dailyRecommendPicture,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyRecommendTitle != null" >
+        #{dailyRecommendTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="dailyRecommendModelId  != null" >
+        #{dailyRecommendModelId,jdbcType=VARCHAR},
+      </if>
+
+    </trim>
+  </insert>
+
+  <select id="getRecommend" resultType="com.njcit.model.article.DailyRecommend">
+    SELECT *
+    FROM daily_recommend
+    WHERE 1 = 1
+    LIMIT #{0},#{1}
+  </select>
+
+  <select id="getRecommendByTemplateId" resultType="com.njcit.model.article.DailyRecommend">
+    SELECT *
+    FROM  daily_recommend
+    WHERE template_id = #{0}
+    LIMIT #{1},#{2}
+  </select>
+
+</mapper>

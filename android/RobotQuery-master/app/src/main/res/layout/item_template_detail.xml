@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="@dimen/cardMarginVertical"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        android:clickable="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:contentPadding="0dp">
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_item"
+                android:src="@drawable/robot_head"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_below="@+id/image_item"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_title_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxEms="23"
+                android:maxLines="3"
+                android:text="员工查询："
+                android:textColor="@color/primary_text"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_content_item"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_title_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxEms="23"
+                android:maxLines="3"
+                android:text="怎么总有人认为计划经济就是几个中央计划委员会开几个中央计划委几个中央计划委会排班或者一台终极计算机搞定出来生产产品、产品价格..."/>
+
+            <TextView
+                android:layout_below="@+id/tv_content_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxEms="23"
+                android:maxLines="3"
+                android:text="46 赞同 28评论 关注问题?"
+                android:textColor="@color/divider"
+                android:id="@+id/textView3"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="使用"
+                android:background="@drawable/selector_button_with_corner"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tv_content_item"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="小蜜"
+                android:layout_above="@+id/tv_title_content"
+                android:layout_toEndOf="@+id/image_item"
+                android:id="@+id/textView"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

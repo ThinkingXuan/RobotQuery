@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/ic_keyboard_blue_500_24dp"
+        android:state_focused="true"
+        />
+
+    <item android:drawable="@drawable/ic_keyboard_voice_blue_500_24dp"
+          android:state_focused="false"/>
+
+</selector>

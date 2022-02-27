@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.hr.PostRecruitSQLMapper">
+    <select id="getPostRecruit" resultType="com.njcit.model.hr.PostRecruit" parameterType="UserConditionSQL">
+        SELECT *
+        FROM post_recruit
+        WHERE 1=1
+        <if test="postId !=null">
+            and ${postId}
+        </if>
+        <if test="postName !=null">
+            and ${postName}
+        </if>
+        <if test="postNumber !=null">
+            and ${postNumber}
+        </if>
+        <if test="postRealNumber !=null">
+            and ${postRealNumber}
+        </if>
+
+    </select>
+</mapper>

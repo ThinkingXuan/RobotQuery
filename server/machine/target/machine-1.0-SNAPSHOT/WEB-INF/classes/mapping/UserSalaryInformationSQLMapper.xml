@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.user.UserSalaryInformationSQLMapper">
+    <select id="getUserSalaryInformation" resultType="com.njcit.model.user.UserSalaryInformation">
+        SELECT *
+        FROM user_salary_information
+        WHERE 1 = 1
+        <if test=" userId!=null">
+            and ${userId}
+        </if>
+        <if test=" userSalary!=null">
+            and ${userSalary}
+        </if>
+        <if test=" userWelfare!=null">
+            and ${userWelfare}
+        </if>
+        <if test=" userGivenTime!=null">
+            and ${userGivenTime}
+        </if>
+
+
+
+    </select>
+</mapper>

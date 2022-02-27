@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.njcit.dao.SQL.user.UserTaskSQLMapper">
+    <select id="getUserTask" resultType="com.njcit.model.user.UserTask">
+
+        SELECT *
+        FROM user_task
+        WHERE 1 = 1
+
+        <if test=" userId!=null">
+            and ${userId}
+        </if>
+        <if test=" taskId!=null">
+            and ${taskId}
+        </if>
+        <if test=" taskContent!=null">
+            and ${taskContent}
+        </if>
+        <if test=" taskExpiryDate!=null">
+          and ${taskExpiryDate}
+        </if>
+    </select>
+</mapper>

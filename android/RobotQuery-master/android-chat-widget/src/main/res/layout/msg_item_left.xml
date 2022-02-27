@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sendDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_titile"
+            android:padding="3dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/userAvatarImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/robot_head"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/userAvatarImageView"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:maxWidth="@dimen/chat_line"
+            android:minHeight="50dp"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/userAvatarImageView"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/faceImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/userAvatarImageView"
+            android:background="@drawable/chatfrom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sendTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textTextView"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/textTextView"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="right|bottom"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:text="23:59下午"
+            android:textColor="#ff58616d"
+            android:visibility="gone"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/userAvatarImageView"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="#818181"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/failImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/msg_state_fail_resend"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/sendingProgressBar"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

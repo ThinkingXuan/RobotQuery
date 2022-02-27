@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar_base"/>
+
+
+    <!--http://blog.csdn.net/sarsscofy/article/details/9245163-->
+    <ListView
+        android:id="@+id/messageListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7fd8d8d8" />
+
+    <com.jialin.chat.view.MessageInputToolBox
+        android:id="@+id/messageInputToolBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
